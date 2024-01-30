@@ -1,0 +1,40 @@
+@import '../../vars/colors.scss';
+
+.welcome {
+  height: calc(100vh - 90px);
+  position: relative;
+  .welcome-body {
+    height: 100%;
+    .welcome-context {
+        height: 100%;
+        max-width: 50%;
+        h1{
+            margin: 150px 0 15px 0;
+            span{
+                border-bottom: 2px solid $green;
+            }
+        }
+        .welcome-btn{
+            margin-top: 25px;
+            .blue-s{
+                border: 2px solid $blue-s;
+                &:hover{
+                    color: #fff;
+                    background-color: $blue-s;
+                }
+            }
+            .bg-green{
+                &:hover{
+                    background-color: darken($green,20%);
+                }
+            }
+        }
+    }
+    img {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      width: 50%;
+    }
+  }
+}

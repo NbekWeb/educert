@@ -1,0 +1,63 @@
+@import "../vars/colors.scss";
+.head {
+  width: 100%;
+  height: 90px;
+  padding: 0 60px;
+  border-bottom: 1px solid #ecedf2;
+  background: #fff;
+  box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+  .head-container {
+    width: 100%;
+    height: 100%;
+    a {
+      position: relative;
+      padding-bottom: 5px;
+      transition: 0.3s ease;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $green;
+        transition: width 0.3s ease;
+      }
+
+      &:hover:before {
+        width: 100%;
+      }
+      &:hover {
+        color: $green;
+      }
+    }
+    .head-right {
+      .search-icon {
+        margin-right: 18px;
+        height: 30px;
+      }
+      div {
+        width: 141px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .blue-b {
+        background-color: rgba($blue-p, 0.1);
+        color: $blue-b;
+        &:hover {
+          background-color: rgba($blue-p, 0.2);
+        }
+        img {
+          width: 20px;
+        }
+      }
+      .green {
+        background-color: rgba($green, 0.1);
+        &:hover {
+          background-color: $green;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

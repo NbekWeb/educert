@@ -1,0 +1,30 @@
+$blue-p: #4F547B;
+$blue-b:#033399;
+$blue-s:#1A064F;
+
+$green:#52DE97;
+
+.blue-p{
+    color: #4F547B;
+}
+
+.blue-b{
+    color: $blue-b;
+}
+
+.green{
+    color: $green;
+}
+
+.white{
+    color: #FFF;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.blue-s{
+    color: $blue-s;
+}
+

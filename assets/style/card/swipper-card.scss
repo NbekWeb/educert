@@ -1,0 +1,30 @@
+.card{
+    height: 497px;
+    width: 410px;
+    .card-body{
+        padding: 13px 0;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    .card-img{
+        width: 410px;
+        height: auto;
+        position: relative;
+        // display: inline-block;
+        img{
+            width: 100%;
+        }
+        .card-badge{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            padding: 17px 9px;
+            z-index: 1;
+            color: red;
+        }
+    }
+    .average{
+        color: #E59819;
+    }
+}

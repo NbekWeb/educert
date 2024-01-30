@@ -1,0 +1,43 @@
+@import "../../vars/colors.scss";
+
+.trending {
+  width: 100%;
+  .font-head{
+    margin: 90px 0 60px 0;
+  }
+  .icons {
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    .icon {
+      width: 300px;
+      height: 100px;
+      border-radius: 8px;
+      border: 1px solid #ededed;
+      background: #fff;
+      padding: 10px;
+      h4{
+        text-transform: capitalize;
+      }
+      &:hover .icon-wrapper ,
+      h4{
+        transition: .3s ease;
+      }
+      &:hover .icon-wrapper {
+        img{
+          filter: brightness(0) invert(1);
+        }
+        background-color: $green;
+        color: #fff;
+      }
+      &:hover h4 {
+        color: $green;
+      }
+      .icon-wrapper {
+        height: 80px;
+        width: 80px;
+        border-radius: 80px;
+        background: #eef2f6;
+      }
+    }
+  }
+}
